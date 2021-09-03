@@ -1,0 +1,20 @@
+h1 {
+  color: red;
+  font-weight: bold;
+}
+title{
+  color: black;
+}
+body{
+  background-color: gray;
+  color:aqua;
+}
+a{
+  color: lime;
+}
+.navAnthony{
+  color: bisque;
+}
+#navagain{
+  background-color: blue;
+}
