@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <title>Books</title>
+  </head>
+  <body>
+    <a href = index.html class="navAnthony" id="navagain">About Me</a>
+    <a href = mma.html class="navAnthony" id="navagain">MMA</a>
+    <a href = books.html class="navAnthony" id="navagain">Books</a>
+    <!--Books heading-->
+    <h1><p class="text-light bg-dark text-center">Books</h1></p>
+    <table class="table table-striped">
+      <thead>
+    <tr>
+      <th scope="col">Title</th>
+      <th scope="col">Author(s)</th>
+      <th scope="col">Year Published</th>
+      <th scope="col">Publisher</th>
+      <th scope="col">Page Count</th>
+      <th scope="col">MSRP</th>
+    </tr>
+  </thead>
+  <tbody> <!--Book table - ALL book information is from Amazon-->
+    <tr>
+      <th scope="row">Slaughter-House Five</th>
+      <td>Kurt Vonnegut</td>
+      <td>1969</td>
+      <td>Delacorte</td>
+      <td>192</td>
+      <td>$7.99</td>
+    </tr>
+    <tr>
+      <th scope="row">Cat's Cradle</th>
+      <td>Kurt Vonnegut</td>
+      <td>1963</td>
+      <td>Holt, Rinehart, and Winston</td>
+      <td>304</td>
+      <td>$9.29</td>
+    </tr>
+    <tr>
+      <th scope="row">Breakfast of Champions</th>
+      <td>Kurt Vonnegut</td>
+      <td>1973</td>
+      <td>Delacorte</td>
+      <td>320</td>
+      <td>$8.29</td>
+    </tr>
+    <tr>
+      <th scope="row">The Sirens of Titan</th>
+      <td>Kurt Vonnegut</td>
+      <td>1959</td>
+      <td>Delacorte</td>
+      <td>319</td>
+      <td>$10.36</td>
+    </tr>
+    <tr>
+      <th scope="row">God Bless You, Mr. Rosewater</th>
+      <td>Kurt Vonnegut</td>
+      <td>1965</td>
+      <td>Holt, Rinehart, and Winston</td>
+      <td>218</td>
+      <td>$13.79</td>
+    </tr>
+  </tbody>
+</table>
+<!-- form for adding data to Books table-->
+  <form>
+    <!-- title entry-->
+  <div class="mb-3">
+        <legend><h1>Book Information Entry</h1></legend>
+    <label for="TitleInput" class="form-label">Title</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text"></div>
+  </div><!-- author entry-->
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Author(s)</label>
+    <input type="text" class="form-control" id="exampleInputPassword1">
+  </div><!-- Year Published entry-->
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Year Published</label>
+    <input type="text" class="form-control" id="exampleInputPassword1">
+  </div><!-- Publisher entry-->
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Publisher</label>
+    <input type="text" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3"><!-- Page count entry-->
+    <label for="exampleInputPassword1" class="form-label">Page Count</label>
+    <input type="text" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3"><!-- MSRP input-->
+    <label for="exampleInputPassword1" class="form-label">MSRP</label>
+    <input type="text" class="form-control" id="exampleInputPassword1">
+  </div>
+  <button type="submit" class="btn btn-primary">Add to Table</button><!--button to submit data for addition to table-->
+</form>  
+  </body>
+</html>
