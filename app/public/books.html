@@ -16,7 +16,7 @@
     <a href = books.html class="navAnthony" id="navagain">Books</a>
     <!--Books heading-->
     <h1><p class="text-light bg-dark text-center">Books</h1></p>
-    <table class="table table-striped">
+    <table id="BookTable" class="table table-striped">
       <thead>
     <tr>
       <th scope="col">Title</th>
@@ -101,5 +101,10 @@
   </div>
   <button type="submit" class="btn btn-primary">Add to Table</button><!--button to submit data for addition to table-->
 </form>  
+<script>src="js/tablesort.js"</script>
+<!--http://tristen.ca/tablesort/demo/-->
+<script>
+  new Tablesort(document.getElementById('BookTable'));
+</script>
   </body>
 </html>
