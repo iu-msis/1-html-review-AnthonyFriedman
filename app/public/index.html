@@ -30,6 +30,10 @@
     <p> Birthdate: {{prettyBirthday}}</p>
     <p> Age: {{result.dob.age}} years old</p>
     </div>
+    <!-- refresh button from vue.js -->
+    <div id="inlinehandler">
+      <button @submit="window.location.reload">Refresh User Data</button>
+    </div>    
     <!--connecting randomuser.js to html-->
     <script src='js/randomuser.js'></script>
     <!-- birthday format from class code -->

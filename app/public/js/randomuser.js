@@ -35,3 +35,13 @@ const SomeApp = {
   }
   
   Vue.createApp(SomeApp).mount('#someApp');
+
+  //refresh button
+  const inlinehandler = Vue.createApp({
+    methods: {
+        getUser() {
+            window.location.reload()
+        }
+      }
+  },
+  Vue.createApp(inlinehandler).mount('#inlinehandler'));
