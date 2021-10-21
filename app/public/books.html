@@ -19,17 +19,19 @@
     <table id="BookTable" class="table table-striped">
       <thead>
     <tr>
+      <th scope="col">ID</th>
       <th scope="col">Title</th>
-      <th scope="col">Author(s)</th>
-      <th scope="col">Year Published</th>
+      <th scope="col">Author</th>
+      <th scope="col">Year_Published</th>
       <th scope="col">Publisher</th>
-      <th scope="col">Page Count</th>
+      <th scope="col">Page_Count</th>
       <th scope="col">MSRP</th>
     </tr>
   </thead>
   <tbody> <!--Book table - ALL book information is from Amazon-->
     <tr>
-      <th scope="row">Slaughter-House Five</th>
+      <th scope="row">1</th>
+      <td>Slaughter-House Five</td>
       <td>Kurt Vonnegut</td>
       <td>1969</td>
       <td>Delacorte</td>
@@ -37,7 +39,8 @@
       <td>$7.99</td>
     </tr>
     <tr>
-      <th scope="row">Cat's Cradle</th>
+      <th scope="row">2</th>
+      <td>Cat's Cradle</td>
       <td>Kurt Vonnegut</td>
       <td>1963</td>
       <td>Holt, Rinehart, and Winston</td>
@@ -45,7 +48,8 @@
       <td>$9.29</td>
     </tr>
     <tr>
-      <th scope="row">Breakfast of Champions</th>
+      <th scope="row">3</th>
+      <td>Breakfast of Champions</td>
       <td>Kurt Vonnegut</td>
       <td>1973</td>
       <td>Delacorte</td>
@@ -53,7 +57,8 @@
       <td>$8.29</td>
     </tr>
     <tr>
-      <th scope="row">The Sirens of Titan</th>
+      <th scope="row">4</th>
+      <td>The Sirens of Titan</td>
       <td>Kurt Vonnegut</td>
       <td>1959</td>
       <td>Delacorte</td>
@@ -61,7 +66,8 @@
       <td>$10.36</td>
     </tr>
     <tr>
-      <th scope="row">God Bless You, Mr. Rosewater</th>
+      <th scope="row">5</th>
+      <td>God Bless You, Mr. Rosewater</td>
       <td>Kurt Vonnegut</td>
       <td>1965</td>
       <td>Holt, Rinehart, and Winston</td>
@@ -71,7 +77,7 @@
   </tbody>
 </table>
 <!-- form for adding data to Books table-->
-  <form>
+  <form v-on:submit.prevent="addNewBook">
     <!-- title entry-->
   <div class="mb-3">
         <legend><h1>Book Information Entry</h1></legend>
@@ -84,7 +90,7 @@
     <input type="text" class="form-control" id="exampleInputPassword1">
   </div><!-- Year Published entry-->
   <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Year Published</label>
+    <label for="exampleInputPassword1" class="form-label">Year_Published</label>
     <input type="text" class="form-control" id="exampleInputPassword1">
   </div><!-- Publisher entry-->
   <div class="mb-3">
@@ -92,7 +98,7 @@
     <input type="text" class="form-control" id="exampleInputPassword1">
   </div>
   <div class="mb-3"><!-- Page count entry-->
-    <label for="exampleInputPassword1" class="form-label">Page Count</label>
+    <label for="exampleInputPassword1" class="form-label">Page_Count</label>
     <input type="text" class="form-control" id="exampleInputPassword1">
   </div>
   <div class="mb-3"><!-- MSRP input-->
