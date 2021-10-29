@@ -28,52 +28,15 @@
       <th scope="col">MSRP</th>
     </tr>
   </thead>
-  <tbody> <!--Book table - ALL book information is from Amazon-->
-    <tr>
-      <th scope="row">1</th>
-      <td>Slaughter-House Five</td>
-      <td>Kurt Vonnegut</td>
-      <td>1969</td>
-      <td>Delacorte</td>
-      <td>192</td>
-      <td>$7.99</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Cat's Cradle</td>
-      <td>Kurt Vonnegut</td>
-      <td>1963</td>
-      <td>Holt, Rinehart, and Winston</td>
-      <td>304</td>
-      <td>$9.29</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Breakfast of Champions</td>
-      <td>Kurt Vonnegut</td>
-      <td>1973</td>
-      <td>Delacorte</td>
-      <td>320</td>
-      <td>$8.29</td>
-    </tr>
-    <tr>
-      <th scope="row">4</th>
-      <td>The Sirens of Titan</td>
-      <td>Kurt Vonnegut</td>
-      <td>1959</td>
-      <td>Delacorte</td>
-      <td>319</td>
-      <td>$10.36</td>
-    </tr>
-    <tr>
-      <th scope="row">5</th>
-      <td>God Bless You, Mr. Rosewater</td>
-      <td>Kurt Vonnegut</td>
-      <td>1965</td>
-      <td>Holt, Rinehart, and Winston</td>
-      <td>218</td>
-      <td>$13.79</td>
-    </tr>
+  <tbody> <!--Book table - for loop connecting to MySQL-->
+    <tr v-for="x in books">
+      <td>{{ x.ID }}</td>
+      <td>{{ x.Title }}</td>
+      <td>{{ x.Author }}</td>
+      <td>{{ x.Publisher }}</td>
+      <td>{{ x.Page_Count }}</td>
+      <td>{{ x.MSRP }}</td>
+  </tr>
   </tbody>
 </table>
 <!-- form for adding data to Books table-->
